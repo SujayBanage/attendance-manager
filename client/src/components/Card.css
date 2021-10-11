@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins';
+}
+.card-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:13rem;
+    width: 20rem;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+    border-radius:20px;
+    margin: 20px;
+    cursor:pointer;
+    background: linear-gradient(to right, #840aee, #b28cff);
+}
+
+.card-container:hover{
+    transition:all 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.btn-div{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 1rem;
+}
+.btn-div button{
+    height:2.5rem;
+    width:8rem;
+    margin:0.5rem;
+    border-radius: 1rem;
+    background-color: black;
+    border:1.5px solid white;
+    color: white;
+    font-family:'Poppins';
+    cursor:pointer;
+}
+
+.btn-div button:hover{
+    background: linear-gradient(to right, #840aee, #b28cff);
+}
+
+#delete{
+    background-color: rgb(230, 35, 35);
+}
+
+
+@media all and (max-width:550px){
+    .card-container{
+        height:10rem;
+        width:15rem;
+    }
+    .card-container h1{
+        font-size:1rem;
+    }
+    #delete{
+        width:5rem;
+    }
+    #detailsbtn{
+        width:5rem;
+    }
+}

@@ -1,0 +1,152 @@
+.form__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+    height:40rem;
+    width:70rem;
+    box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.form__div img{
+    height:20rem;
+    width:30rem;
+}
+
+.register__form{
+    height:35rem;
+    width:35rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    /* border: 1px solid black; */
+    background: linear-gradient(to right, #840aee, #b28cff);
+    box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.register__form button{
+    height:2.3rem;
+    width:8rem;
+    margin: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.7rem;
+    border: white;
+    cursor: pointer;
+    font-family: 'poppins';
+}
+
+.formcontrol__div{
+    text-align: center;
+    height:5rem;
+    width:18rem;
+    margin-left: -1rem;
+}
+.formcontrol__div input{
+    height:2.2rem;
+    width:18rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+.formcontrol__div label{
+    font-size:1rem;
+    margin:0.3rem;
+}
+
+
+
+
+@media all and (max-width:550px){
+    .form__div img{
+        display:none;
+        height:10rem;
+        width:10rem;
+    }
+    .form__div{
+        display:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 3px solid black;  */
+        height:50rem; 
+        width:30rem; 
+        /* box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.3);  */
+        box-shadow:none;
+        border-radius: 1rem; 
+        margin: 2rem; 
+    }
+    .register__form{
+        height:20rem;
+        width:7rem;
+    }
+    .formcontrol__div{
+        text-align: center;
+        height:5rem;
+        width:15rem;
+    }
+    .formcontrol__div input{
+        height:2rem;
+        width:14rem;
+        margin: 0.9rem;
+        border-radius: 0.5rem;
+    }
+    .formcontrol__div label{
+        font-size:1rem;
+        margin-bottom:0.5rem;
+    }
+}
+
+@media all and (max-width:800px){
+    .form__div img{
+        /* display:none; */
+        height:15rem;
+        width:15rem;
+        margin: 1rem;
+    }
+    .form__div{
+        display:none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 3px solid black;  */
+        height:45rem; 
+        width:35rem; 
+        /* box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.3);  */
+        box-shadow:none;
+        border-radius: 1rem; 
+        margin: 2rem; 
+    }
+    .register__form{
+        height:35rem;
+        width:20rem;
+    }    
+}
+
+@media all and (max-width:1024px){
+    .form__div img{
+        /* display:none; */
+        height:15rem;
+        width:15rem;
+        margin: 1rem;
+    }
+    
+    .form__div{
+        display:none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 3px solid black;  */
+        height:55rem; 
+        width:35rem; 
+        /* box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.3);  */
+        box-shadow:none;
+        border-radius: 1rem; 
+        margin: 5rem; 
+    }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-size: 62.5%;
+}
+/*<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" type="text/css">*/
+.navbar{
+    transition: all 0.5 ease-in-out;
+    display:flex;
+    height:5rem;
+    flex-direction:column;
+    width:100%;
+    align-items:flex-end;
+    justify-content:center;
+    /* background: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.5)); */
+    /* background: linear-gradient(to right, #7f00ff, #e100ff);  */
+    /* background: linear-gradient(to right, #f13c94, hsl(25, 92%, 51%)); */
+    background: linear-gradient(to right, #8e2de2, #782fff);
+    margin-bottom: 0.5rem;
+    border-radius:2rem;
+}
+.navbar__links{
+    transition: all 0.5 ease-in-out;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right: 2rem;
+}
+.navbar__links a {
+    text-decoration: none;
+    font-size: 1rem;
+    margin:0.3rem;
+    padding:0.5rem;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+.navbar__links a:hover{
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+}
+
+.navbar-active{
+    border-radius:2rem;
+    width:100%;
+    transition: all 0.5 ease-in-out;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height:20rem;
+    background: linear-gradient(to right, #8e2de2, #782fff);
+    margin-bottom: 2rem;
+}
+.active-navbar-links{
+    transition: all 0.5 ease-in-out;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.active-links{
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size:0.7rem;
+}
+
+.active-links:hover{
+    background-color: aliceblue;
+    color: black;
+    padding:0.5rem;
+}
+
+
+.hamburger-button{
+    display:none;
+}
+
+@media all and (max-width:660px)
+{
+    .navbar__links a{
+        display:none;   
+    }
+    .hamburger-button{
+        display:block;
+    }
+    
+}

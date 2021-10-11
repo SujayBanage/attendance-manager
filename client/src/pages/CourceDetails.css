@@ -1,0 +1,138 @@
+.cource__info__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.cource__info__wrapper header{
+    font-size:2rem;
+}
+.cource__info__wrapper img{
+    height:20rem;
+    width:20rem;
+}
+
+.cource__info{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    /* border: 2px solid black; */
+    height:20rem;
+    width:30rem;
+    background: linear-gradient(to right, #840aee, #b28cff);  
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    color: white;
+    padding:1rem;
+}
+.cource__info h1{
+    margin: 0.5rem;
+}
+
+#currentlectures{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+#currentlectures button{
+    height:2.5rem;
+    width:8rem;
+    margin:0.8rem;
+    border-radius: 1rem;
+    background-color: black;
+    border:1.5px solid white;
+    color: white;
+    font-family:'Poppins';
+    cursor:pointer;
+}
+
+#currentlectures button:hover{
+    background: linear-gradient(to right, #840aee, #b28cff);   
+}
+
+.students__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.image__div{
+    margin:2rem;
+}
+
+
+.student__card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:15rem;
+    width: 25rem;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+    border-radius:20px;
+    margin: 20px;
+    cursor:pointer;
+    background: linear-gradient(to right, #840aee, #b28cff);
+    color:white;    
+}
+
+.student__card h2{
+    margin: 0.5rem;
+}
+.student__card button{
+    height:2.5rem;
+    width:8rem;
+    margin:0.8rem;
+    border-radius: 1rem;
+    background-color: black;
+    border:1.5px solid white;
+    color: white;
+    font-family:'Poppins';
+    cursor:pointer;
+}
+
+.student__card button:hover{
+    background: linear-gradient(to right, #8e2de2, #8550f0);
+}
+
+.student__card:hover{
+    transition:all 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+@media all and (max-width:550px){
+    #courceinfo{
+        height:10rem;
+        width:10rem;
+    }
+    .cource__info{
+        height:16rem;
+        width:15rem;
+    }
+    .cource__info h1{
+        font-size: 1rem;
+    }
+    .student__card{
+        height:12rem;
+        width: 15rem;
+    }
+    .student__card button{
+        height:2rem;
+        width:5rem;
+    }
+
+    .student__card h2{
+        font-size: 0.8rem;
+    }
+    .image__div img{
+        height:10rem;
+        width:10rem;
+    }
+}

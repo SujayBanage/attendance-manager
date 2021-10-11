@@ -1,0 +1,124 @@
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.student__cources{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.student__cource__card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:200px;
+    width: 400px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+    border-radius:20px;
+    margin: 20px;
+    cursor:pointer;
+    background: linear-gradient(to right, #840aee, #b28cff);  
+}
+
+.join__cource__div{
+    margin-top: 2rem;
+}
+
+
+
+.header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.header header{
+    margin: 2rem;
+}
+
+header{
+    font-size:2rem;
+    text-align:center;
+    margin: 2rem;
+}
+
+.header img{
+    height:15rem;
+    width:20rem;
+    margin: 1rem;
+}
+
+
+.box{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#unenroll{
+    background-color: rgb(230, 35, 35);
+}
+#logout{
+    background-color: rgb(230, 35, 35);
+    float:right;
+    height:2.5rem;
+    width:8rem;
+    border-radius: 1rem;
+    border:1.5px solid white;
+    color: white;
+    font-family:'Poppins';
+    cursor:pointer;
+    
+}
+#joincource{
+    background-color:black;
+    height:2.5rem;
+    width:8rem;
+    border-radius: 1rem;
+    border:1.5px solid white;
+    color: white;
+    font-family:'Poppins';
+    cursor:pointer;
+}
+
+#joincource:hover{
+    background: linear-gradient(to right, #840aee, #b28cff);  
+}
+
+
+
+@media all and (max-width:550px){
+    header{
+        font-size:1.5rem;
+        text-align:center;
+        margin: 2rem;
+    }
+    #headerimg{
+        height:15rem;
+        width:15rem;
+    }
+    .header h1{
+        font-size: 1rem;
+    }
+    .student__cource__card{
+        height:13rem;
+        width: 18rem;
+        border-radius:20px;
+        margin: 20px;
+        cursor:pointer;
+    }
+    #details{
+        width:7rem;
+    }
+    #unenroll{
+        width:7rem;
+    }
+}

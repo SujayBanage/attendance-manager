@@ -1,0 +1,98 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+   margin:auto;
+    height: 50rem;
+    width:50rem;
+    /* border: 2px solid black; */
+}
+
+.container header {
+    font-size:2rem;
+    margin:1rem;
+}
+.container img{
+    height:15rem;
+    width:15rem;
+    margin:1rem;
+}
+
+.add_cource_form{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(to right, #8e2de2, #8550f0);
+    height: 35rem;
+    width:30rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem 0.3rem rgba(0, 0, 0, 0.5);
+    
+}
+
+.add_cource_form  div{
+    height:6rem;
+    width:20rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.add_cource_form  div label{
+    font-size:1.5rem;
+    color: white;
+}
+
+.add_cource_form div input{
+    height:2rem;
+    width:18rem;
+    border-radius: 0.5rem;
+}
+
+#goback{
+    height:2.5rem;
+    width:15rem;
+    margin:0.8rem;
+    border-radius: 1rem;
+    background-color: rgb(230, 35, 35);
+    border:1.5px solid white;
+    color: white;
+    font-family:'Poppins';
+    cursor:pointer;
+}
+
+.add_cource_form button:hover{
+    background: linear-gradient(to right, #8e2de2, #8550f0);    
+}
+
+
+@media all and (max-width:750px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container img{
+        display: none;
+    }
+    .add_cource_form{
+        height: 30rem;
+        width:20rem;
+        margin: 2rem;
+    }
+    .container header {
+        font-size:1rem;
+    }
+    .add_cource_form div input{
+        height:2rem;
+        width:15rem;
+        border-radius: 0.5rem;
+    }
+    .add_cource_form  div label{
+        font-size:1rem;
+        color: white;
+    }
+}

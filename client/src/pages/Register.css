@@ -1,0 +1,53 @@
+.form__container__div{
+    display:flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    align-items:center;
+}
+
+.select__div label{
+    font-size:2rem;
+    font-family: 'poppins';
+}
+
+.select__div select{
+    height:2.5rem;
+    width:20rem;
+    margin: 1rem;
+}
+
+.select__div select option{
+    height:3rem;
+}
+
+/* .register__form__div{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border: 3px solid black;
+    width:50rem;
+    height:30rem;
+} */
+/* .register__form{
+    border: 3px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width: 100rem;
+} */
+
+
+@media all and (max-width:550px){
+    .select__div label{
+        font-size:1rem;
+        font-family: 'poppins';
+    }
+    .select__div select{
+        height:2.5rem;
+        width:15rem;
+        margin: 1rem;
+    }
+}
+

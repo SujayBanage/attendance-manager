@@ -1,0 +1,122 @@
+
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100vw;
+}
+
+.instructor__info__div{
+    /* height: 50rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.instructor__info__div heading{
+    font-size:3rem;
+}
+
+.instructor__info__div h1{
+    font-size:1.5rem;
+}
+
+.instructor__info__div img{
+    height:30rem;
+    width:30rem;
+    /* margin: 2rem; */
+}
+
+.instructor__info__div button{
+    align-self: center;
+    height:2.5rem;
+    width:8rem;
+    margin:0.5rem;
+    border-radius: 1rem;
+    background-color: rgb(230, 35, 35);
+    border:1.5px solid white;
+    color: white;
+    font-family:'Poppins';
+    cursor:pointer;
+}
+
+#addcource{
+    height:2.5rem;
+    width:8rem;
+    margin:0.8rem;
+    border-radius: 1rem;
+    background-color: black;
+    border:1.5px solid white;
+    color: white;
+    font-family:'Poppins';
+    cursor:pointer;
+}
+
+#addcource a{
+    text-decoration: none;
+    color:white;
+}
+
+/* .instructor__cources__div{
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+    width: 98%;
+} */
+
+.instructor__cources__div heading{
+    font-size:3rem;
+    margin:1rem;
+}
+
+.instructor__cources__div img{
+    height:30rem;
+    width:30rem;
+}
+
+.instructor__cources__div{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+
+
+.cources{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media all and (max-width:550px){
+
+    .instructor__info__div heading{
+        font-size:1.5rem;
+    }
+    #instructorimg{
+        height:15rem;
+        width:20rem;
+    }
+    .instructor__info__div h1{
+        font-size:1rem;
+    }
+    .instructor__info__div{
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .instructor__cources__div heading{
+        font-size:2rem;
+        margin:1rem;
+    }
+    #yourcources{
+        height:10rem ;
+        width:20rem ; 
+    }
+}
