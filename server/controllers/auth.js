@@ -87,6 +87,10 @@ exports.StudentLogin = async(req,res,next) => {
 
         if(!student || !ismatch)
         {
+
+            console.log(student);
+            console.log(ismatch);
+
             res.json({
                 success: false,
                 message:"invalid details"

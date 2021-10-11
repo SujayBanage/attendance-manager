@@ -60,7 +60,7 @@ const Form = ({role}) => {
 
     try {
       // const res = await axios.post("https://attendance-manager-mern.herokuapp.com/api/auth/register", payload, config);
-      const res = await axios.post("http://localhost:8000/api/auth/register", payload, config);
+      const res = await axios.post(process.env.REACT_APP_URL+"/api/auth/register", payload, config);
       console.log(res);
       // console.log(data.Token);
       if(res.data.success=== true)
@@ -98,7 +98,7 @@ const Form = ({role}) => {
     
     try {
       // const res = await axios.post("https://attendance-manager-mern.herokuapp.com/api/auth/register", payload, config);
-      const res = await axios.post("http://localhost:8000/api/auth/register", payload, config);
+      const res = await axios.post(process.env.REACT_APP_URL+"/api/auth/register", payload, config);
       // console.log(data);
       // console.log(data.Token);
       console.log(res.data.success)
