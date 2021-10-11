@@ -3,14 +3,14 @@ import React ,{lazy,Suspense} from 'react'
 import {BrowserRouter as Router ,Switch ,Route} from 'react-router-dom';
 
 import Home from './pages/Home'
-const Login = lazy(()=>"./pages/Login") 
-const Register  = lazy(()=>"./pages/Register") 
-const InstructorDashboard = lazy(()=>"./pages/InstructorDashboard") ;
-const StudentDashboard = lazy(()=>"./pages/StudentDashboard") ;
-const AddCourse = lazy(()=>"./pages/AddCource.js")  ;
-const CourceDetails = lazy(()=>"./pages/CourceDetails.js") ;
-const CourceDetailsStudent = lazy(()=>"./pages/CourceDetailsStudent.js") ;
-const Navbar  = lazy(()=>"./components/Navbar.js") 
+const Login = lazy(()=>import("./pages/Login")) 
+const Register  = lazy(()=>import("./pages/Register")) 
+const InstructorDashboard = lazy(()=>import("./pages/InstructorDashboard")) ;
+const StudentDashboard = lazy(()=>import("./pages/StudentDashboard")) ;
+const AddCourse = lazy(()=>import("./pages/AddCource.js"))  ;
+const CourceDetails = lazy(()=>import("./pages/CourceDetails.js")) ;
+const CourceDetailsStudent = lazy(()=>import("./pages/CourceDetailsStudent.js")) ;
+const Navbar  = lazy(()=>import("./components/Navbar.js")) 
 
 const App = () => {
     return (
