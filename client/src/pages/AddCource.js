@@ -52,7 +52,7 @@ const AddCource = () => {
 
     try{
       // const res = await axios.post('https://attendance-manager-mern.herokuapp.com/api/private/addCource',payload,config);
-      const res = await axios.post('http://localhost:8000/api/private/addCource',payload,config);
+      const res = await axios.post(process.env.REACT_APP_URL+'/api/private/addCource',payload,config);
 
       console.log(res);
 

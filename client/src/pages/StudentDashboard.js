@@ -72,7 +72,7 @@ const StudentDashboard = () => {
     };
     if (token) {
       // const res = await axios.get("https://attendance-manager-mern.herokuapp.com/api/private/getStudentData", config);
-      const res = await axios.get("http://localhost:8000/api/private/getStudentData", config);
+      const res = await axios.get(process.env.REACT_APP_URL+"/api/private/getStudentData", config);
       console.log(res.data);
       if (res.data === "") {
         history.push("/login");

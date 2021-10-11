@@ -61,7 +61,7 @@ const CourceDetails = () => {
         }
 
         // const res = await axios.get(`https://attendance-manager-mern.herokuapp.com/api/private/getCourceData/${id}`,config);
-        const res = await axios.get(`http://localhost:8000/api/private/getCourceData/${id}`,config);
+        const res = await axios.get(process.env.REACT_APP_URL+`/api/private/getCourceData/${id}`,config);
         console.log(res);
         if(res.data.success === true){
             setCourceDetails({courcename:res.data.data.courceName,courcecreator:res.data.data.courceCreator.email,courcekey:res.data.data.courceKey,currentlectures:res.data.data.currentLectures,totallectures:res.data.data.totalLectures})
@@ -104,7 +104,7 @@ const CourceDetails = () => {
         // const currentlectures = e.target.dataset.currentlectures;
         // const totallectures = e.target.dataset.totallectures;
         // const res = await axios.patch(`https://attendance-manager-mern.herokuapp.com/api/private/currentLectures/${id}`);
-        const res = await axios.patch(`http://localhost:8000/api/private/currentLectures/${id}`);
+        const res = await axios.patch(process.env.REACT_APP_URL+`/api/private/currentLectures/${id}`);
         console.log(res);
     }
 

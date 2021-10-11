@@ -73,11 +73,11 @@ const Login = ({history}) => {
     if(role==="student")
     {
       // REQ_URL = "https://attendance-manager-mern.herokuapp.com/api/auth/studentlogin";
-      REQ_URL = "http://localhost:8000/api/auth/studentlogin";
+      REQ_URL = process.env.REACT_APP_URL+"/api/auth/studentlogin";
     }
     else{
       // REQ_URL = "https://attendance-manager-mern.herokuapp.com/api/auth/instructorlogin";
-      REQ_URL = "http://localhost:8000/api/auth/instructorlogin";
+      REQ_URL = process.env.REACT_APP_URL+"/api/auth/instructorlogin";
     }
 
     try{

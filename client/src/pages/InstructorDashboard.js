@@ -66,7 +66,7 @@ const InstructorDashboard = () => {
         }
         if(token) {
             // const res = await axios.get('https://attendance-manager-mern.herokuapp.com/api/private/getInstructorData',config);
-            const res = await axios.get('http://localhost:8000/api/private/getInstructorData',config);
+            const res = await axios.get(process.env.REACT_APP_URL+'/api/private/getInstructorData',config);
             console.log(res)
             if(res.data.success === false){
                 history.push("/login");

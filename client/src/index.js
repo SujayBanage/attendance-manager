@@ -3,7 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import io from "socket.io-client";
 import App from "./App.js";
-const END_POINT = "http://localhost:8000/";
+
+
+let END_POINT = process.env.REACT_APP_URL;
+
 const socket = io(END_POINT, {
   transports: ["websocket", "polling", "flashsocket"],
 });

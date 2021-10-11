@@ -1,4 +1,5 @@
-const dotenv = require('dotenv').config();
+const dotenv = require('dotenv')
+dotenv.config();
 const express = require('express');
 const port = process.env.PORT || 8000;
 const app = express();
@@ -10,7 +11,7 @@ const http = require('http');
 const server = http.createServer(app);
 const io = require('socket.io')(server,{
     cors:{
-        origin:'http://localhost:8000',
+        origin:'http://127.0.0.1:5000',
         methods:['GET','POST','PUT','PATCH']
     }
 });

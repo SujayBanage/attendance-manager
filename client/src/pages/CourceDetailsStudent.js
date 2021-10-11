@@ -47,7 +47,7 @@ const CourceDetailsStudent = () => {
         }
         
         // const res = await axios.get(`https://attendance-manager-mern.herokuapp.com/api/private/getCourceData/${id}`,config);
-        const res = await axios.get(`http://localhost:8000/api/private/getCourceData/${id}`,config);
+        const res = await axios.get(process.env.REACT_APP_URL+`/api/private/getCourceData/${id}`,config);
         console.log(res);
         if(res.data.success === true){
             notify(res.data.message,res.data.success);
