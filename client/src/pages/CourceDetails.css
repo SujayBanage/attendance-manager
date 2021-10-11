@@ -86,8 +86,8 @@
     margin: 0.5rem;
 }
 .student__card button{
-    height:2.5rem;
-    width:8rem;
+    height:3rem;
+    width:13rem;
     margin:0.8rem;
     border-radius: 1rem;
     background-color: black;
@@ -125,7 +125,7 @@
     }
     .student__card button{
         height:2rem;
-        width:5rem;
+        width:8rem;
     }
 
     .student__card h2{

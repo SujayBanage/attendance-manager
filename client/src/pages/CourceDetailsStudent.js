@@ -95,7 +95,7 @@ const CourceDetailsStudent = () => {
                                 :
                         <div className="percentage__div__wrapper">
                             <div className="percentage__div" style={{height:"2rem",width:`${Math.trunc(user.attendance/info.currentlectures * 100)}%`}}>
-                                <h2>{Math.trunc(user.attendance/info.currentlectures * 100)} %</h2>
+                                <h2>{user.attendance!==0 && info.currnetlectures!==0 ? Math.trunc(user.attendance/info.currentlectures * 100) : 0} %</h2>
                             </div>
                         </div>
                             }

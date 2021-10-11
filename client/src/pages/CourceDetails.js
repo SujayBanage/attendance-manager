@@ -92,9 +92,16 @@ const CourceDetails = () => {
     // }
 
     const attendanceHandler=(e)=>{
-      const email = e.target.dataset.email;
-      const courceid = id;
-      socket.emit('addAttendance',{email,courceid});
+
+      if(courceDetails.currentlectures === 0){
+        notify("pls increase current lectures first!!!",false);
+      }
+      else{
+        const email = e.target.dataset.email;
+        const courceid = id;
+        socket.emit('addAttendance',{email,courceid});
+      }
+
     }
 
 
@@ -159,7 +166,7 @@ const CourceDetails = () => {
                               {/* courceDetails.currentlectures===0 ?  <button variant="contained" color="primary" onClick={attendanceHandler} data-email={user.email} disabled="true">+</button> :  <button variant="contained" color="primary" onClick={attendanceHandler} data-email={user.email}>+</button> */}
                             {/* } */}
 
-                            <button variant="contained" color="primary" onClick={attendanceHandler} data-email={user.email}>add attendance +</button>
+                            <button variant="contained" color="primary" onClick={attendanceHandler} data-email={user.email}>attendance +</button>
                           </div>  
                         </>
                     )
