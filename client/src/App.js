@@ -1,17 +1,16 @@
-import React from 'react'
+import React ,{lazy,Suspense} from 'react'
 
 import {BrowserRouter as Router ,Switch ,Route} from 'react-router-dom';
 
 import Home from './pages/Home'
-import Login from './pages/Login'
-import Register from './pages/Register'
-
-import InstructorDashboard from './pages/InstructorDashboard';
-import StudentDashboard from './pages/StudentDashboard';
-import AddCourse from './pages/AddCource.js';
-import CourceDetails from './pages/CourceDetails.js';
-import CourceDetailsStudent from './pages/CourceDetailsStudent.js';
-import Navbar from './components/Navbar.js'
+const Login = lazy(()=>"./pages/Login") 
+const Register  = lazy(()=>"./pages/Register") 
+const InstructorDashboard = lazy(()=>"./pages/InstructorDashboard") ;
+const StudentDashboard = lazy(()=>"./pages/StudentDashboard") ;
+const AddCourse = lazy(()=>"./pages/AddCource.js")  ;
+const CourceDetails = lazy(()=>"./pages/CourceDetails.js") ;
+const CourceDetailsStudent = lazy(()=>"./pages/CourceDetailsStudent.js") ;
+const Navbar  = lazy(()=>"./components/Navbar.js") 
 
 const App = () => {
     return (
@@ -20,13 +19,41 @@ const App = () => {
             <Navbar/>
             <Switch>
                 <Route exact  path="/" component={Home}/>
-                <Route exact path="/login" component={Login}/>
-                <Route exact path="/register" component={Register}/>
-                <Route exact path="/instructordashboard" component={InstructorDashboard}/>
-                <Route exact path="/studentdashboard" component={StudentDashboard}/>
-                <Route exact path="/addcource" component={AddCourse}/>
-                <Route exact path="/courcedetails/:id" component={CourceDetails}/>
-                <Route exact path="/studentcourcedetails/:id/:userid" component={CourceDetailsStudent}/>
+                <Route exact path="/login">
+                    <Suspense fallback={<h1>loading....</h1>}>
+                        <Login/>
+                    </Suspense>
+                </Route>
+                <Route exact path="/register">
+                    <Suspense fallback={<h1>loading....</h1>}>
+                        <Register/>
+                    </Suspense>
+                </Route>
+                <Route exact path="/instructordashboard">
+                    <Suspense fallback={<h1></h1>}>
+                        <InstructorDashboard/>
+                    </Suspense>
+                </Route>
+                <Route exact path="/studentdashboard" >
+                    <Suspense fallback={<h1></h1>}>
+                        <StudentDashboard/>
+                    </Suspense>
+                </Route>
+                <Route exact path="/addcource">
+                    <Suspense fallback={<h1></h1>}>
+                        <AddCourse/>
+                    </Suspense>
+                </Route>
+                <Route exact path="/courcedetails/:id" >
+                    <Suspense fallback={<h1></h1>}>
+                        <CourceDetails/>
+                    </Suspense>
+                </Route>
+                <Route exact path="/studentcourcedetails/:id/:userid" >
+                    <Suspense fallback={<h1></h1>}>
+                        <CourceDetailsStudent/>
+                    </Suspense>
+                </Route>
             </Switch>
         </Router>
         </>
